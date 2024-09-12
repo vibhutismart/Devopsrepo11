@@ -1,8 +1,13 @@
 # Use the latest PHP image with Apache as the base image
 FROM php:8.2-apache 
 
-# Install PHP extensions (e.g., mysqli for MySQL support, zip, etc.)
-RUN docker-php-ext-install mysqli pdo pdo_mysql zip
+# Install required packages, including libzip
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    zip \
+    unzip \
+    && docker-php-ext-configure zip \
+    && docker-php-ext-install mysqli pdo pdo_mysql zip
 
 
 # Set the working directory in the container

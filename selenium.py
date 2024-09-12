@@ -10,7 +10,11 @@ import time
 CHROME_DRIVER_PATH = '/var/lib/docker/volumes/jenkins_home/_data/final_project/roles/chromedriver'
 
 # URL of your PHP website
+<<<<<<< HEAD
 URL = 'http://54.91.115.159:8089/'
+=======
+URL = 'http://44.211.171.114:8089/'
+>>>>>>> 0ec270bb96ed15401f973d9005e0cf7111bf4066
 
 # Initialize the Chrome WebDriver
 chrome_options = Options()

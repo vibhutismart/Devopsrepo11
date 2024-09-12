@@ -14,10 +14,10 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /var/www/html
 
 # Copy the PHP application files into the container
-COPY projCert  /var/www/html/
+COPY website  /var/www/html/
 
-# Expose port 85 to allow traffic to the Apache server
-EXPOSE 85
+# Expose port 90 to allow traffic to the Apache server
+EXPOSE 90
 
 # Define the command to run the Apache server
 CMD ["apache2-foreground"]

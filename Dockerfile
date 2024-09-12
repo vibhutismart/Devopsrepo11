@@ -9,7 +9,7 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql zip
 WORKDIR /var/www/html
 
 # Copy the PHP application files into the container
-COPY Dockerfile  /var/www/html/
+COPY projCert  /var/www/html/
 
 # Expose port 80 to allow traffic to the Apache server
 EXPOSE 80

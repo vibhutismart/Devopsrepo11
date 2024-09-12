@@ -16,8 +16,8 @@ WORKDIR /var/www/html
 # Copy the PHP application files into the container
 COPY website  /var/www/html/
 
-# Expose port 89 to allow traffic to the Apache server
-EXPOSE 89
+# Expose port 90 to allow traffic to the Apache server
+EXPOSE 90
 
 # Define the command to run the Apache server
 CMD ["apache2-foreground"]

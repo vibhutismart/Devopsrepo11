@@ -16,8 +16,8 @@ WORKDIR /var/www/html
 # Copy the PHP application files into the container
 COPY projCert  /var/www/html/
 
-# Expose port 80 to allow traffic to the Apache server
-EXPOSE 80
+# Expose port 85 to allow traffic to the Apache server
+EXPOSE 85
 
 # Define the command to run the Apache server
 CMD ["apache2-foreground"]
